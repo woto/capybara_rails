@@ -1,0 +1,23 @@
+<h1>Listing ascaffolds</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ascaffolds.each do |ascaffold| %>
+      <tr>
+        <td><%= link_to 'Show', ascaffold %></td>
+        <td><%= link_to 'Edit', edit_ascaffold_path(ascaffold) %></td>
+        <td><%= link_to 'Destroy', ascaffold, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ascaffold', new_ascaffold_path %>

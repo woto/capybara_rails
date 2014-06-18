@@ -1,0 +1,2 @@
+module AscaffoldsHelper
+end

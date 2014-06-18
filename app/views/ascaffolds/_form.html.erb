@@ -1,0 +1,17 @@
+<%= form_for(@ascaffold) do |f| %>
+  <% if @ascaffold.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@ascaffold.errors.count, "error") %> prohibited this ascaffold from being saved:</h2>
+
+      <ul>
+      <% @ascaffold.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
